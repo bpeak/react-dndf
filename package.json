@@ -1,0 +1,33 @@
+{
+	"name": "react-dndf",
+	"version": "1.0.0",
+	"description": "Drag And Drop Files For React",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bpeak/react-dndf.git"
+	},
+	"author": "bpeak",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bpeak/react-dndf/issues"
+	},
+	"homepage": "https://github.com/bpeak/react-dndf#readme",
+	"dependencies": {
+		"prop-types": "^15.7.2"
+	},
+	"scripts": {
+		"build": "babel src/index.js --out-file index.js"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.2.3",
+		"@babel/plugin-proposal-class-properties": "^7.3.3",
+		"@babel/polyfill": "^7.2.5",
+		"@babel/preset-env": "^7.3.1",
+		"@babel/preset-react": "^7.0.0",
+		"babel-loader": "^8.0.5",
+		"babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
+		"webpack": "^4.29.5",
+		"webpack-cli": "^3.2.3"
+	}
+}
