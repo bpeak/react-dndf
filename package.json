@@ -1,13 +1,16 @@
 {
 	"name": "react-dndf",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Drag And Drop Files For React",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bpeak/react-dndf.git"
 	},
-	"author": "bpeak",
+	"author": {
+		"name" : "Bpeak",
+		"email" : "bpeakcpeak@gmail.com"
+	},
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/bpeak/react-dndf/issues"
