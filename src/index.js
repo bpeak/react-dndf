@@ -28,7 +28,7 @@ const ReactDNDF = (React) => {
     
         render(){
             const { 
-                className,
+                wrapperClassName,
                 wrapperStyle, 
                 accept,
                 children,
@@ -37,8 +37,14 @@ const ReactDNDF = (React) => {
             const { onInputFileChange } = this
             return (
                 <div
-                    className={className}
-                    style={ wrapperStyle ? Object.assign(wrapperStyle, { position : "relative"}) : wrapperDefaultStyle }
+                    className={wrapperClassName}
+                    style={ 
+                        wrapperStyle 
+                            ? Object.assign(wrapperStyle, { position : "relative" }) 
+                            : wrapperClassName 
+                                ? { position : "relative" }
+                                : wrapperDefaultStyle
+                        }
                 >
                     <input
                         ref="inputFile"
@@ -57,6 +63,8 @@ const ReactDNDF = (React) => {
     DropZone.propTypes = {
         accpet : PropTypes.string,
         onFileChange : PropTypes.func.isRequired,
+        wrapperClassName : PropTypes.string,
+        wrapperStyle : PropTypes.object,
     }
     return DropZone
 }
