@@ -18,13 +18,17 @@ class App extends React.Component{
 		console.log("files : ", files)
 	}
 	
-	return (
-		<div>
-			<DropZone onFileChange={this.fileChangeHandler}>
-				<div> Drag And Drop files Here ! </div>
-			</DropZone>		
-		</div>
-	)
+	render(){
+		return (
+			<div>
+				<DropZone onFileChange={this.fileChangeHandler}>
+					<div style={{ width : "100%", height : "100%", backgroundColor : "gray" }}> 
+						Drag And Drop files Here !
+					</div>
+				</DropZone>		
+			</div>
+		)
+	}
 }
 ```
 # Usage
@@ -32,14 +36,14 @@ class App extends React.Component{
 			// img cover
 			<DropZone onFileChange={this.fileChangeHandler}>
 				<img 
-					style={ width : "100%", height : "100%" } 
+					style={{ width : "100%", height : "100%" }} 
 					src={yourImgSrc}
 				/>
 			</DropZone>		
 			
 			// div cover
 			<DropZone onFileChange={this.fileChangeHandler}>
-				<div className="myCoverClassName">{yourText}<div>
+				<div className="myCoverClassName">{yourText}</div>
 			</DropZone>		
 			
 ```
