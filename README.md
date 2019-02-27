@@ -59,4 +59,4 @@ class App extends React.Component{
 Contributions, questions and pull requests are all welcomed.
 # License
 
-Copyright (c) 2017.  [Bpeak](https://bpeakblog.com/)  [Licensed with The MIT License (MIT)](http://opensource.org/licenses/MIT)
+Copyright (c) 2019.  [Bpeak](https://bpeakblog.com/)  [Licensed with The MIT License (MIT)](http://opensource.org/licenses/MIT)

@@ -1,6 +1,6 @@
 {
 	"name": "react-dndf",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"description": "Drag And Drop Files For React",
 	"main": "index.js",
 	"repository": {
